@@ -14,9 +14,11 @@ def get_book_text(filepath):
 text_string = get_book_text(filepath)
 
 from stats import get_word_count
+from stats import character_count #TEST
+
 
 def main():
-    print(f"{get_word_count(text_string)} words found in the document")
-
-
+    print(f"{get_word_count(text_string)} words found in the document") #fine
+    print(f"{character_count}") #TEST
+           
 main()
